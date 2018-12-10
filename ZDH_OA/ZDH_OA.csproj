@@ -1,0 +1,794 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{683E2CA4-7922-43E6-B997-A17467358EF5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZDH_OA</RootNamespace>
+    <AssemblyName>ZDH_OA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Export, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangePass.aspx" />
+    <Content Include="Content\bootstrap-datetimepicker.min.css" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\AquaHeader.jpg" />
+    <Content Include="Content\Images\BlackGlassHeader.jpg" />
+    <Content Include="Content\Images\GlassHeader.jpg" />
+    <Content Include="Content\Images\PlasticBlueHeader.jpg" />
+    <Content Include="Content\Images\RedWineHeader.jpg" />
+    <Content Include="Content\jedate.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="DeputyDirector\allperson.aspx" />
+    <Content Include="DeputyDirector\allpersonhistory.aspx" />
+    <Content Include="DeputyDirector\Daily_Manage.aspx" />
+    <Content Include="DeputyDirector\daytotal.aspx" />
+    <Content Include="DeputyDirector\Debug.aspx" />
+    <Content Include="DeputyDirector\DeputyDirector.aspx" />
+    <Content Include="DeputyDirector\Design.aspx" />
+    <Content Include="DeputyDirector\LingXing.aspx" />
+    <Content Include="DeputyDirector\Manage_Working.aspx" />
+    <Content Include="DeputyDirector\OnJob.aspx" />
+    <Content Include="DeputyDirector\personform.aspx" />
+    <Content Include="DeputyDirector\personhistory.aspx" />
+    <Content Include="DeputyDirector\Programming_Picture.aspx" />
+    <Content Include="Director\allperson.aspx" />
+    <Content Include="Director\allpersonhistory.aspx" />
+    <Content Include="Director\daytotal.aspx" />
+    <Content Include="Director\Director.aspx" />
+    <Content Include="Director\PeopleManage.aspx" />
+    <Content Include="Director\WorkDayUpdate.aspx" />
+    <Content Include="Employee\allperson.aspx" />
+    <Content Include="Employee\allpersonhistory.aspx" />
+    <Content Include="Employee\Daily_Manage.aspx" />
+    <Content Include="Employee\daytotal.aspx" />
+    <Content Include="Employee\Debug.aspx" />
+    <Content Include="Employee\Design.aspx" />
+    <Content Include="Employee\form\Daily_Manage.aspx" />
+    <Content Include="Employee\form\Debug.aspx" />
+    <Content Include="Employee\form\Design.aspx" />
+    <Content Include="Employee\form\LingXing.aspx" />
+    <Content Include="Employee\form\Manage_Working.aspx" />
+    <Content Include="Employee\form\OnJob.aspx" />
+    <Content Include="Employee\form\Programming_Picture.aspx" />
+    <Content Include="Employee\LingXing.aspx" />
+    <Content Include="Employee\list\allperson.aspx" />
+    <Content Include="Employee\list\allpersonhistory.aspx" />
+    <Content Include="Employee\list\daytotal.aspx" />
+    <Content Include="Employee\list\personform.aspx" />
+    <Content Include="Employee\list\personhistory.aspx" />
+    <Content Include="Employee\Manage_Working.aspx" />
+    <Content Include="Employee\OnJob.aspx" />
+    <Content Include="Employee\personform.aspx" />
+    <Content Include="Employee\personhistory.aspx" />
+    <Content Include="Employee\Programming_Picture.aspx" />
+    <Content Include="Employee\www\img\logo.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Jiediao\allperson.aspx" />
+    <Content Include="Jiediao\allpersonhistory.aspx" />
+    <Content Include="Jiediao\daytotal.aspx" />
+    <Content Include="Jiediao\Jiediao.aspx" />
+    <Content Include="Jiediao\personhistory.aspx" />
+    <Content Include="Jiediao\Work.aspx" />
+    <Content Include="Root\function\addPeople.aspx" />
+    <Content Include="Root\function\offJob.aspx" />
+    <Content Include="Root\function\updateInformation.aspx" />
+    <Content Include="Root\OffJob.aspx" />
+    <Content Include="Root\Root.aspx" />
+    <Content Include="Root\updateInformation.aspx" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.zh-CN.js" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\jeDate.js" />
+    <Content Include="Scripts\jquery-3.0.0.js" />
+    <Content Include="Scripts\jquery-3.0.0.min.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\stopExecutionOnTimeout.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Work.aspx" />
+    <Content Include="www\aside.css" />
+    <Content Include="www\css\default.css" />
+    <Content Include="www\css\reset.css" />
+    <Content Include="www\css\styles.css" />
+    <Content Include="www\form.css" />
+    <Content Include="www\img\background.jpg" />
+    <Content Include="www\img\logo.png" />
+    <Content Include="www\img\微信图片_20180925144940.png" />
+    <Content Include="www\regexp.js" />
+    <Content Include="www\table.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Light.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Root.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="sql_pw.ini" />
+    <Content Include="Jiediao\Root.Master" />
+    <Content Include="Jiediao\Light.master" />
+    <Content Include="Jiediao\Main.master" />
+    <Content Include="Root\Root.Master" />
+    <Content Include="Root\Light.master" />
+    <Content Include="Root\Main.master" />
+    <Content Include="Director\Root.Master" />
+    <Content Include="Director\Main.master" />
+    <Content Include="Director\Light.master" />
+    <Content Include="DeputyDirector\Root.Master" />
+    <Content Include="DeputyDirector\Light.master" />
+    <Content Include="DeputyDirector\Main.master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\ServerPath.cs" />
+    <Compile Include="App_Code\DataLogic.cs" />
+    <Compile Include="App_Code\sqlTable.cs" />
+    <Compile Include="ChangePass.aspx.cs">
+      <DependentUpon>ChangePass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePass.aspx.designer.cs">
+      <DependentUpon>ChangePass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\allperson.aspx.cs">
+      <DependentUpon>allperson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\allperson.aspx.designer.cs">
+      <DependentUpon>allperson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\allpersonhistory.aspx.cs">
+      <DependentUpon>allpersonhistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\allpersonhistory.aspx.designer.cs">
+      <DependentUpon>allpersonhistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\Daily_Manage.aspx.cs">
+      <DependentUpon>Daily_Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\Daily_Manage.aspx.designer.cs">
+      <DependentUpon>Daily_Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\daytotal.aspx.cs">
+      <DependentUpon>daytotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\daytotal.aspx.designer.cs">
+      <DependentUpon>daytotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\Debug.aspx.cs">
+      <DependentUpon>Debug.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\Debug.aspx.designer.cs">
+      <DependentUpon>Debug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\DeputyDirector.aspx.cs">
+      <DependentUpon>DeputyDirector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\DeputyDirector.aspx.designer.cs">
+      <DependentUpon>DeputyDirector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\Design.aspx.cs">
+      <DependentUpon>Design.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\Design.aspx.designer.cs">
+      <DependentUpon>Design.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\Light.master.cs">
+      <DependentUpon>Light.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\Light.master.designer.cs">
+      <DependentUpon>Light.master</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\LingXing.aspx.cs">
+      <DependentUpon>LingXing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\LingXing.aspx.designer.cs">
+      <DependentUpon>LingXing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\Main.master.cs">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\Main.master.designer.cs">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\Manage_Working.aspx.cs">
+      <DependentUpon>Manage_Working.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\Manage_Working.aspx.designer.cs">
+      <DependentUpon>Manage_Working.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\OnJob.aspx.cs">
+      <DependentUpon>OnJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\OnJob.aspx.designer.cs">
+      <DependentUpon>OnJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\personform.aspx.cs">
+      <DependentUpon>personform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\personform.aspx.designer.cs">
+      <DependentUpon>personform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\personhistory.aspx.cs">
+      <DependentUpon>personhistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\personhistory.aspx.designer.cs">
+      <DependentUpon>personhistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\Programming_Picture.aspx.cs">
+      <DependentUpon>Programming_Picture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\Programming_Picture.aspx.designer.cs">
+      <DependentUpon>Programming_Picture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeputyDirector\Root.Master.cs">
+      <DependentUpon>Root.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeputyDirector\Root.Master.designer.cs">
+      <DependentUpon>Root.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Director\allperson.aspx.cs">
+      <DependentUpon>allperson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\allperson.aspx.designer.cs">
+      <DependentUpon>allperson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director\allpersonhistory.aspx.cs">
+      <DependentUpon>allpersonhistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\allpersonhistory.aspx.designer.cs">
+      <DependentUpon>allpersonhistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director\daytotal.aspx.cs">
+      <DependentUpon>daytotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\daytotal.aspx.designer.cs">
+      <DependentUpon>daytotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director\Director.aspx.cs">
+      <DependentUpon>Director.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\Director.aspx.designer.cs">
+      <DependentUpon>Director.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director\Light.master.cs">
+      <DependentUpon>Light.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\Light.master.designer.cs">
+      <DependentUpon>Light.master</DependentUpon>
+    </Compile>
+    <Compile Include="Director\Main.master.cs">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\Main.master.designer.cs">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="Director\PeopleManage.aspx.cs">
+      <DependentUpon>PeopleManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\PeopleManage.aspx.designer.cs">
+      <DependentUpon>PeopleManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director\Root.Master.cs">
+      <DependentUpon>Root.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\Root.Master.designer.cs">
+      <DependentUpon>Root.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Director\WorkDayUpdate.aspx.cs">
+      <DependentUpon>WorkDayUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\WorkDayUpdate.aspx.designer.cs">
+      <DependentUpon>WorkDayUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\allperson.aspx.cs">
+      <DependentUpon>allperson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\allperson.aspx.designer.cs">
+      <DependentUpon>allperson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\allpersonhistory.aspx.cs">
+      <DependentUpon>allpersonhistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\allpersonhistory.aspx.designer.cs">
+      <DependentUpon>allpersonhistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\Daily_Manage.aspx.cs">
+      <DependentUpon>Daily_Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\Daily_Manage.aspx.designer.cs">
+      <DependentUpon>Daily_Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\daytotal.aspx.cs">
+      <DependentUpon>daytotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\daytotal.aspx.designer.cs">
+      <DependentUpon>daytotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\Debug.aspx.cs">
+      <DependentUpon>Debug.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\Debug.aspx.designer.cs">
+      <DependentUpon>Debug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\Design.aspx.cs">
+      <DependentUpon>Design.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\Design.aspx.designer.cs">
+      <DependentUpon>Design.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\form\Daily_Manage.aspx.cs">
+      <DependentUpon>Daily_Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\form\Daily_Manage.aspx.designer.cs">
+      <DependentUpon>Daily_Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\form\Debug.aspx.cs">
+      <DependentUpon>Debug.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\form\Debug.aspx.designer.cs">
+      <DependentUpon>Debug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\form\Design.aspx.cs">
+      <DependentUpon>Design.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\form\Design.aspx.designer.cs">
+      <DependentUpon>Design.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\form\LingXing.aspx.cs">
+      <DependentUpon>LingXing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\form\LingXing.aspx.designer.cs">
+      <DependentUpon>LingXing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\form\Manage_Working.aspx.cs">
+      <DependentUpon>Manage_Working.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\form\Manage_Working.aspx.designer.cs">
+      <DependentUpon>Manage_Working.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\form\OnJob.aspx.cs">
+      <DependentUpon>OnJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\form\OnJob.aspx.designer.cs">
+      <DependentUpon>OnJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\form\Programming_Picture.aspx.cs">
+      <DependentUpon>Programming_Picture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\form\Programming_Picture.aspx.designer.cs">
+      <DependentUpon>Programming_Picture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\LingXing.aspx.cs">
+      <DependentUpon>LingXing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\LingXing.aspx.designer.cs">
+      <DependentUpon>LingXing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\list\allperson.aspx.cs">
+      <DependentUpon>allperson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\list\allperson.aspx.designer.cs">
+      <DependentUpon>allperson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\list\allpersonhistory.aspx.cs">
+      <DependentUpon>allpersonhistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\list\allpersonhistory.aspx.designer.cs">
+      <DependentUpon>allpersonhistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\list\daytotal.aspx.cs">
+      <DependentUpon>daytotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\list\daytotal.aspx.designer.cs">
+      <DependentUpon>daytotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\list\personform.aspx.cs">
+      <DependentUpon>personform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\list\personform.aspx.designer.cs">
+      <DependentUpon>personform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\list\personhistory.aspx.cs">
+      <DependentUpon>personhistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\list\personhistory.aspx.designer.cs">
+      <DependentUpon>personhistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\Manage_Working.aspx.cs">
+      <DependentUpon>Manage_Working.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\Manage_Working.aspx.designer.cs">
+      <DependentUpon>Manage_Working.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\OnJob.aspx.cs">
+      <DependentUpon>OnJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\OnJob.aspx.designer.cs">
+      <DependentUpon>OnJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\personform.aspx.cs">
+      <DependentUpon>personform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\personform.aspx.designer.cs">
+      <DependentUpon>personform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\personhistory.aspx.cs">
+      <DependentUpon>personhistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\personhistory.aspx.designer.cs">
+      <DependentUpon>personhistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\Programming_Picture.aspx.cs">
+      <DependentUpon>Programming_Picture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\Programming_Picture.aspx.designer.cs">
+      <DependentUpon>Programming_Picture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Jiediao\allperson.aspx.cs">
+      <DependentUpon>allperson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jiediao\allperson.aspx.designer.cs">
+      <DependentUpon>allperson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jiediao\allpersonhistory.aspx.cs">
+      <DependentUpon>allpersonhistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jiediao\allpersonhistory.aspx.designer.cs">
+      <DependentUpon>allpersonhistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jiediao\daytotal.aspx.cs">
+      <DependentUpon>daytotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jiediao\daytotal.aspx.designer.cs">
+      <DependentUpon>daytotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jiediao\Jiediao.aspx.cs">
+      <DependentUpon>Jiediao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jiediao\Jiediao.aspx.designer.cs">
+      <DependentUpon>Jiediao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jiediao\Light.master.cs">
+      <DependentUpon>Light.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jiediao\Light.master.designer.cs">
+      <DependentUpon>Light.master</DependentUpon>
+    </Compile>
+    <Compile Include="Jiediao\Main.master.cs">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jiediao\Main.master.designer.cs">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="Jiediao\personhistory.aspx.cs">
+      <DependentUpon>personhistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jiediao\personhistory.aspx.designer.cs">
+      <DependentUpon>personhistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jiediao\Root.Master.cs">
+      <DependentUpon>Root.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jiediao\Root.Master.designer.cs">
+      <DependentUpon>Root.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Jiediao\Work.aspx.cs">
+      <DependentUpon>Work.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jiediao\Work.aspx.designer.cs">
+      <DependentUpon>Work.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Light.master.cs">
+      <DependentUpon>Light.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Light.master.designer.cs">
+      <DependentUpon>Light.master</DependentUpon>
+    </Compile>
+    <Compile Include="Main.master.cs">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.master.designer.cs">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Root.master.cs">
+      <DependentUpon>Root.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root.master.designer.cs">
+      <DependentUpon>Root.master</DependentUpon>
+    </Compile>
+    <Compile Include="Root\function\addPeople.aspx.cs">
+      <DependentUpon>addPeople.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root\function\addPeople.aspx.designer.cs">
+      <DependentUpon>addPeople.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Root\function\offJob.aspx.cs">
+      <DependentUpon>offJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root\function\offJob.aspx.designer.cs">
+      <DependentUpon>offJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Root\function\updateInformation.aspx.cs">
+      <DependentUpon>updateInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root\function\updateInformation.aspx.designer.cs">
+      <DependentUpon>updateInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Root\Light.master.cs">
+      <DependentUpon>Light.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root\Light.master.designer.cs">
+      <DependentUpon>Light.master</DependentUpon>
+    </Compile>
+    <Compile Include="Root\Main.master.cs">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root\Main.master.designer.cs">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="Root\OffJob.aspx.cs">
+      <DependentUpon>OffJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root\OffJob.aspx.designer.cs">
+      <DependentUpon>OffJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Root\Root.aspx.cs">
+      <DependentUpon>Root.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root\Root.aspx.designer.cs">
+      <DependentUpon>Root.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Root\Root.Master.cs">
+      <DependentUpon>Root.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root\Root.Master.designer.cs">
+      <DependentUpon>Root.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Root\updateInformation.aspx.cs">
+      <DependentUpon>updateInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root\updateInformation.aspx.designer.cs">
+      <DependentUpon>updateInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Work.aspx.cs">
+      <DependentUpon>Work.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Work.aspx.designer.cs">
+      <DependentUpon>Work.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="form\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2213/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
