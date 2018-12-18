@@ -23,7 +23,7 @@
                     <dx:SplitterContentControl>
                         <div class="leftPanel">
                             <%-- DXCOMMENT: Configure the left panel's ASPxNavBar --%>
-                            <dx:ASPxNavBar ID="ASPxNavBar1" runat="server" AutoCollapse="True" EnableAnimation="True" Width="100%">
+                            <dx:ASPxNavBar ID="ASPxNavBar1" runat="server" AutoCollapse="True" EnableAnimation="True" Width="100%" Theme="MaterialCompact">
                                 <Groups>
                                     <dx:NavBarGroup Text="¹¤×÷Á¿ÌîÐ´">
                                         <Items>
@@ -50,7 +50,6 @@
                                         </Items>
                                     </dx:NavBarGroup>
                                 </Groups>
-
                                 <Border BorderWidth="0px" />
                                 <Paddings Padding="0px" />
                             </dx:ASPxNavBar>

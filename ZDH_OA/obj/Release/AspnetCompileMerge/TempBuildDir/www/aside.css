@@ -1,0 +1,14 @@
+﻿#close {
+    position: absolute;
+    right: 50px;
+    top: 120px;
+}
+.welcome{
+    position:absolute;
+    right:50px;
+    top:10px;
+}
+#logout{
+    position:absolute;
+    right:0;
+}

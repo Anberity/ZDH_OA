@@ -1,0 +1,6 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Jiediao/Root.Master" AutoEventWireup="true" CodeBehind="Light.master.cs" Inherits="ZDH_OA.Jiediao.Light" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
+    <div class="content">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+</asp:Content>

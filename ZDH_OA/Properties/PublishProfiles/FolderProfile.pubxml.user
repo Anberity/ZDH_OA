@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\工作量汇总网站\OA</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>12/11/2018 13:47:20</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>12/11/2018 13:47:20</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Data.v18.1.resources.dll">
+      <publishTime>10/31/2018 14:36:49</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Office.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Pdf.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Printing.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.RichEdit.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:37:03</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Web.Resources.v18.1.resources.dll">
+      <publishTime>10/31/2018 14:36:58</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Web.v18.1.resources.dll">
+      <publishTime>10/31/2018 14:36:46</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Data.v18.1.dll">
+      <publishTime>10/31/2018 14:36:49</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Images.v18.1.dll">
+      <publishTime>10/31/2018 14:36:52</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Office.v18.1.Core.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Pdf.v18.1.Core.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Printing.v18.1.Core.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.RichEdit.v18.1.Core.dll">
+      <publishTime>10/31/2018 14:37:03</publishTime>
+    </File>
+    <File Include="bin/DevExpress.RichEdit.v18.1.Export.dll">
+      <publishTime>10/31/2018 14:37:03</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxThemes.v18.1.dll">
+      <publishTime>10/31/2018 14:36:46</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.Resources.v18.1.dll">
+      <publishTime>10/31/2018 14:36:59</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.v18.1.dll">
+      <publishTime>10/31/2018 14:36:46</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Data.v18.1.resources.dll">
+      <publishTime>10/31/2018 14:36:49</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Office.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Pdf.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Printing.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.RichEdit.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:37:03</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Web.Resources.v18.1.resources.dll">
+      <publishTime>10/31/2018 14:36:59</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Web.v18.1.resources.dll">
+      <publishTime>10/31/2018 14:36:46</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Data.v18.1.resources.dll">
+      <publishTime>10/31/2018 14:36:49</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Office.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Pdf.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Printing.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.RichEdit.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:37:03</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Web.Resources.v18.1.resources.dll">
+      <publishTime>10/31/2018 14:36:59</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Web.v18.1.resources.dll">
+      <publishTime>10/31/2018 14:36:46</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Data.v18.1.resources.dll">
+      <publishTime>10/31/2018 14:36:49</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Office.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Pdf.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Printing.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:36:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.RichEdit.v18.1.Core.resources.dll">
+      <publishTime>10/31/2018 14:37:03</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Web.Resources.v18.1.resources.dll">
+      <publishTime>10/31/2018 14:36:59</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Web.v18.1.resources.dll">
+      <publishTime>10/31/2018 14:36:46</publishTime>
+    </File>
+    <File Include="bin/ZDH_OA.dll">
+      <publishTime>12/11/2018 13:47:17</publishTime>
+    </File>
+    <File Include="bin/ZDH_OA.pdb">
+      <publishTime>12/11/2018 13:47:17</publishTime>
+    </File>
+    <File Include="ChangePass.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap-datetimepicker.min.css">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/Images/AquaHeader.jpg">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/Images/BlackGlassHeader.jpg">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/Images/GlassHeader.jpg">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/Images/PlasticBlueHeader.jpg">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/Images/RedWineHeader.jpg">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/jedate.css">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/allperson.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/allpersonhistory.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/Daily_Manage.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/daytotal.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/Debug.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/DeputyDirector.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/Design.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/Light.master">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/LingXing.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/Main.master">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/Manage_Working.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/OnJob.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/personform.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/personhistory.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/Programming_Picture.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="DeputyDirector/Root.Master">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Director/allperson.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Director/allpersonhistory.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Director/daytotal.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Director/Director.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Director/Light.master">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Director/Main.master">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Director/PeopleManage.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Director/Root.Master">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Director/WorkDayUpdate.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/allperson.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/allpersonhistory.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/Daily_Manage.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/daytotal.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/Debug.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/Design.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/form/Daily_Manage.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/form/Debug.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/form/Design.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/form/LingXing.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/form/Manage_Working.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/form/OnJob.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/form/Programming_Picture.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/LingXing.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/list/allperson.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/list/allpersonhistory.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/list/daytotal.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/list/personform.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/list/personhistory.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/Manage_Working.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/OnJob.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/personform.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/personhistory.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/Programming_Picture.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Employee/www/img/logo.png">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Jiediao/allperson.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Jiediao/allpersonhistory.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Jiediao/daytotal.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Jiediao/Jiediao.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Jiediao/Light.master">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Jiediao/Main.master">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Jiediao/personhistory.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Jiediao/Root.Master">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Jiediao/Work.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Light.master">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Main.master">
+      <publishTime>12/11/2018 13:42:37</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>12/11/2018 13:47:18</publishTime>
+    </File>
+    <File Include="Root.master">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Root/function/addPeople.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Root/function/offJob.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Root/function/updateInformation.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Root/Light.master">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Root/Main.master">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Root/OffJob.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Root/Root.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Root/Root.Master">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Root/updateInformation.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-datetimepicker.min.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-datetimepicker.zh-CN.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.min.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.min.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.min.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.min.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/jeDate.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.0.0.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.0.0.min.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.0.0.min.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.0.0.slim.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.0.0.slim.min.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.0.0.slim.min.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.min.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.min.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/popper.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/popper.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/README.md">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/stopExecutionOnTimeout.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.min.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.min.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.min.js">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.min.js.map">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="sql_pw.ini">
+      <publishTime>12/10/2018 11:51:08</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/11/2018 13:47:17</publishTime>
+    </File>
+    <File Include="Work.aspx">
+      <publishTime>12/10/2018 11:51:07</publishTime>
+    </File>
+    <File Include="www/aside.css">
+      <publishTime>12/10/2018 11:51:08</publishTime>
+    </File>
+    <File Include="www/css/default.css">
+      <publishTime>12/10/2018 11:51:08</publishTime>
+    </File>
+    <File Include="www/css/reset.css">
+      <publishTime>12/10/2018 11:51:08</publishTime>
+    </File>
+    <File Include="www/css/styles.css">
+      <publishTime>12/10/2018 11:51:08</publishTime>
+    </File>
+    <File Include="www/form.css">
+      <publishTime>12/10/2018 11:51:08</publishTime>
+    </File>
+    <File Include="www/img/background.jpg">
+      <publishTime>12/10/2018 11:51:08</publishTime>
+    </File>
+    <File Include="www/img/logo.png">
+      <publishTime>12/10/2018 11:51:08</publishTime>
+    </File>
+    <File Include="www/img/微信图片_20180925144940.png">
+      <publishTime>12/10/2018 11:51:08</publishTime>
+    </File>
+    <File Include="www/regexp.js">
+      <publishTime>12/10/2018 11:51:08</publishTime>
+    </File>
+    <File Include="www/table.css">
+      <publishTime>12/10/2018 11:51:08</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

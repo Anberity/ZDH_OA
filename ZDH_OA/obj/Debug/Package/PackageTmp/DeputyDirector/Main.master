@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/DeputyDirector/Root.Master" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="ZDH_OA.DeputyDirector.Main" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+    <dx:ASPxSplitter ID="ContentSplitter" runat="server" Width="100%" Height="100%">
+        <ClientSideEvents PaneResized="function(s, e) { 
+            if(window.ASPxGridView1 && e.pane.name == 'ContentCenter')
+                ASPxGridView1.SetHeight(e.pane.GetClientHeight());
+            }" />
+        <Styles>
+            <Pane>
+                <Paddings Padding="0px" />
+                <border borderwidth="0px" />
+            </Pane>
+        </Styles>
+        <Panes>
+            <dx:SplitterPane Name="ContentLeft" ShowCollapseBackwardButton="True" Size="200px" MinSize="150px">
+                <PaneStyle CssClass="leftPane"></PaneStyle>
+                <PaneStyle>
+                    <Paddings Padding="1px" />
+                </PaneStyle>
+                <ContentCollection>
+                    <dx:SplitterContentControl>
+                        <div class="leftPanel">
+                            <%-- DXCOMMENT: Configure the left panel's ASPxNavBar --%>
+                            <dx:ASPxNavBar ID="ASPxNavBar1" runat="server" AutoCollapse="True" EnableAnimation="True" Width="100%">
+                               <Groups>
+                                    <dx:NavBarGroup Text="工作量填写">
+                                        <Items>
+                                            <dx:NavBarItem Text="借调状态更改" NavigateUrl="~/DeputyDirector/OnJob.aspx"></dx:NavBarItem>
+                                            <dx:NavBarItem Text="设计工作量" NavigateUrl="~/DeputyDirector/Design.aspx"></dx:NavBarItem>
+                                            <dx:NavBarItem Text="编程画面工作量" NavigateUrl="~/DeputyDirector/Programming_Picture.aspx"></dx:NavBarItem>
+                                            <dx:NavBarItem Text="调试工程管理工作量" NavigateUrl="~/DeputyDirector/Debug.aspx"></dx:NavBarItem>
+                                            <dx:NavBarItem Text="经营工作量" NavigateUrl="~/DeputyDirector/Manage_Working.aspx"></dx:NavBarItem>
+                                            <dx:NavBarItem Text="日常管理工作量" NavigateUrl="~/DeputyDirector/Daily_Manage.aspx"></dx:NavBarItem>
+                                            <dx:NavBarItem Text="零星工日" NavigateUrl="~/DeputyDirector/LingXing.aspx"></dx:NavBarItem>
+                                        </Items>
+                                    </dx:NavBarGroup>
+                                    <dx:NavBarGroup Text="个人工作量查询" Expanded="False">
+                                        <Items>
+                                            <dx:NavBarItem Text="本月工作量查询" NavigateUrl="~/DeputyDirector/personform.aspx"></dx:NavBarItem>
+                                            <dx:NavBarItem Text="历史工作量查询" NavigateUrl="~/DeputyDirector/personhistory.aspx"></dx:NavBarItem>
+                                        </Items>
+                                    </dx:NavBarGroup>
+                                   <dx:NavBarGroup Text="科室工作量查询" Expanded="False">
+                                       <Items>
+                                           <dx:NavBarItem Text="本月工作量查询" NavigateUrl="~/DeputyDirector/allperson.aspx"></dx:NavBarItem>
+                                           <dx:NavBarItem Text="历史工作量查询" NavigateUrl="~/DeputyDirector/allpersonhistory.aspx"></dx:NavBarItem>
+                                           <dx:NavBarItem Text="工作量统计汇总" NavigateUrl="~/DeputyDirector/daytotal.aspx"></dx:NavBarItem>
+                                        </Items>
+                                    </dx:NavBarGroup>
+                                </Groups>
+
+                                <Border BorderWidth="0px" />
+                                <Paddings Padding="0px" />
+                            </dx:ASPxNavBar>
+
+                        </div>
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+            </dx:SplitterPane>
+            <dx:SplitterPane Name="ContentCenter" ScrollBars="Auto">
+                <PaneStyle CssClass="contentPane"></PaneStyle>
+                <Separator Visible="True">
+                    <SeparatorStyle>
+                        <border borderwidth="1px" />
+                        <BorderTop BorderWidth="0px" />
+                    </SeparatorStyle>
+                </Separator>
+                <ContentCollection>
+                    <dx:SplitterContentControl>
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+            </dx:SplitterPane>
+
+        </Panes>
+    </dx:ASPxSplitter>
+</asp:Content>
+

@@ -1,0 +1,6 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/DeputyDirector/Root.Master" AutoEventWireup="true" CodeBehind="Light.master.cs" Inherits="ZDH_OA.DeputyDirector.Light" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
+    <div class="content">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+</asp:Content>

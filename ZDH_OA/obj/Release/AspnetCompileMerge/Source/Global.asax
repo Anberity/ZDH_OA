@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="ZDH_OA.Global_asax" Language="C#" %>

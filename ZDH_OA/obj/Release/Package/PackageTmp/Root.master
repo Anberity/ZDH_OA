@@ -1,0 +1,64 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Root.master.cs" Inherits="ZDH_OA.RootMaster" %>
+
+<%-- DXCOMMENT: Page Root.master is a master page that contains the root layout (it includes Header, Cental Area, and Footer) --%>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <title>自动化工程技术公司工作量汇总查询系统</title>
+    <link rel="stylesheet" type="text/css" href="Content/Site.css" />
+    <style>
+        .logo {
+            width: 273px;
+            height: 60px;
+            margin-top: 10px;
+            margin-left: -30px;
+        }
+    </style>
+</head>
+<body runat="server" id="Body">
+    <form id="form1" runat="server">
+    <dx:ASPxSplitter ID="ASPxSplitter1" runat="server" AllowResize="False" Orientation="Vertical"
+        FullscreenMode="True" SeparatorVisible="False" Height="100%" Width="100%" EnableHierarchyRecreation="false">
+        <Styles>
+            <Pane>
+                <Paddings Padding="0px" />
+                <Border BorderWidth="0px" />
+            </Pane>
+        </Styles>
+        <Panes>
+            <dx:SplitterPane Name="Header" AutoHeight="true">
+                <PaneStyle CssClass="headerPane">
+                    <BorderBottom BorderWidth="1px" />
+                </PaneStyle>
+                <ContentCollection>
+                    <dx:SplitterContentControl ID="SplitterContentControl1" runat="server">
+                        <div class="headerTop">
+                            <div class="templateTitle">
+                                <a class="logo">
+                                        <img src="www/img/logo.png" style="background-color: transparent" draggable="false" /></a>
+                                    <a id="TitleLink" href="~/Work.aspx" runat="server" style="position: absolute; top: 25px; left: 500px;font-weight:700">自动化工程技术公司工作量汇总查询系统</a>
+                                    <h3 id="name" style="position: absolute; top: -10px; right: 210px; font-size: 30px"></h3>
+                                    <dx:ASPxButton Style="position: absolute; top: 20px; right: 50px;" Text="注销" runat="server" ID="logout" Theme="MaterialCompact" Width="58px" Height="40px" OnClick="logout_Click" />
+                            </div>
+                        </div>
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+            </dx:SplitterPane>
+            <dx:SplitterPane Name="Content" MinSize="375px">
+                <PaneStyle CssClass="mainContentPane"></PaneStyle>
+                <ContentCollection>
+                    <dx:SplitterContentControl ID="SplitterContentControl3" runat="server">
+                        <asp:ContentPlaceHolder ID="Content" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+                <PaneStyle BackColor="white">
+                    <BorderBottom BorderWidth="1px" />
+                </PaneStyle>
+            </dx:SplitterPane>
+        </Panes>
+    </dx:ASPxSplitter>
+    </form>
+</body>
+</html>

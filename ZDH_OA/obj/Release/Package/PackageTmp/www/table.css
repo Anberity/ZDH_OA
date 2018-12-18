@@ -1,0 +1,24 @@
+﻿.table td, .table th{
+    padding:.45rem;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.table td.remarks{
+    width:300px;
+}
+.tab4 .table td.remarks{
+    width:140px;
+}
+.tab5 .table td.remarks{
+    width:240px;
+}
+.tab6 .table td.remarks{
+    width:450px;
+}
+.changebox td.projectname {
+    width: 200px;
+}
+.changebox td.realname{
+    width:90px;
+}

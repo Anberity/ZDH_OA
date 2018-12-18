@@ -1,0 +1,42 @@
+﻿.container {
+    width: 420px;
+}
+
+.submit {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.btn {
+    display: block;
+    height: 40px;
+}
+
+.form-group {
+    margin-left: 12px;
+}
+
+.form-control {
+    display: inline-block;
+    width: 150px;
+}
+.remarksbox{
+    margin-bottom:36px;
+}
+textarea.form-control {
+    height: 130px;
+}
+#box{
+    display:flex;
+    justify-content:center;
+}
+.delete{
+    margin: 0 80px;
+}
+.line{
+    height:2px;
+    background:#000;
+    margin:30px 0;
+}
